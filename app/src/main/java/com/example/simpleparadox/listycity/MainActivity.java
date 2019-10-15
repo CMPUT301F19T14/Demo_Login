@@ -73,18 +73,21 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUser(currentUser);
+        updateUser();
 
 
     }
 
-    public void updateUser(FirebaseUser currentUser){
+    public void updateUser(){
+        FirebaseUser currentUser=mAuth.getCurrentUser();
 
         if(currentUser!=null){
             String email = currentUser.getEmail();
             String uid = currentUser.getUid();
             infoView.setText(email+"\n"+uid);
+        }
+        else{
+            infoView.setText("No User loggin");
         }
 
     }
@@ -101,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d("YES", "signInWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                updateUser();
 //                                updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
@@ -118,11 +122,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+
+
     }
 
     public void signout(View view){
         mAuth.getInstance().signOut();
-
+        updateUser();
     }
 
     @Override
@@ -137,9 +143,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         mAuth = FirebaseAuth.getInstance();
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        updateUI(currentUser);
 
+        updateUser();
 
     }
 
