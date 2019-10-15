@@ -7,44 +7,58 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/add_cty_field"
-            android:layout_width="122dp"
-            android:layout_height="wrap_content"
-            android:ems="8" />
-
-        <EditText
-            android:id="@+id/add_province_field"
-            android:layout_width="107dp"
-            android:layout_height="wrap_content"
-            android:ems="8" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:hint="User Name"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:hint="Password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:onClick="login"
+        android:id="@+id/login"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/add_city_button"
-        android:text="Add City" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:id="@+id/signup"
+        android:onClick="register"
+        />
 
-        <Button
-            android:id="@+id/del_city_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Del City" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="signout"
+        android:id="@+id/signout"
+        />
 
-
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/city_list"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/info"/>
+
+
 
 
 
