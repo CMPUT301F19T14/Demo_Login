@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "971685337551",
+    "firebase_url": "https://listystore-aa8c6.firebaseio.com",
+    "project_id": "listystore-aa8c6",
+    "storage_bucket": "listystore-aa8c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971685337551:android:9237ae722b884735c49aba",
+        "android_client_info": {
+          "package_name": "com.example.simpleparadox.listycity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971685337551-v728mr3d3rmebfk0ctnhs9bvlh0nqhck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmiqDo9ukU_oiiot58xtn2c-63-Sgqp0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971685337551-v728mr3d3rmebfk0ctnhs9bvlh0nqhck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
